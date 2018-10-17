@@ -1,0 +1,7 @@
+[user]
+	name = mikeder
+	email = mikedernet@gmail.com
+[credential]
+	helper = credential-store
+[core]
+	autocrlf = input
