@@ -1,4 +1,5 @@
-colorscheme elflord
+colorscheme darkblue 
+
 syntax on
 syntax enable
 
@@ -13,3 +14,5 @@ set expandtab
 
 " Paste toggle to disable auto indent
 set pastetoggle=<F2>
+
+set number
