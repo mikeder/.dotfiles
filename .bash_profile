@@ -1,3 +1,8 @@
+# If tmux is installed, run that shit from the start!
+if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
+  exec tmux
+fi
+
 alias ytdlpl='youtube-dl --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s"'
 alias code='source ~/code/bin/activate'
 export NOTESDIR="/Users/mike.eder/Documents/worknotes/"
