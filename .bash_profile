@@ -1,4 +1,4 @@
-# If tmux is installed, run that shit from the start!
+# If tmux is installed, run that shit from the git-go!
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
