@@ -1,4 +1,4 @@
-colorscheme darkblue 
+colorscheme desert 
 
 syntax on
 syntax enable
