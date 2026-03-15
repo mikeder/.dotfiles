@@ -3,12 +3,11 @@
 " -------------------------------
 call plug#begin('~/.vim/plugged')
 
-Plug 'sainnhe/everforest'
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
-
-" Optional: Add other useful plugins
 Plug 'dense-analysis/ale'         " For linting and format-on-save
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'preservim/nerdtree'         " For a file explorer sidebar
+Plug 'sainnhe/everforest'
+Plug 'Shougo/neocomplete.vim'
 
 call plug#end()
 
@@ -21,6 +20,9 @@ filetype plugin indent on          " Essential for vim-go to work correctly
 set number relativenumber
 set tabstop=4 shiftwidth=4 expandtab
 set autoindent
+
+map <C-n> :NERDTreeToggle<CR>
+
 
 " Optional: configure vim-go to use gopls
 let g:go_def_mode='gopls'
