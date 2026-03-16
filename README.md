@@ -9,4 +9,4 @@ dotfiles config status.showUntrackedFiles no
 ```
 
 Then use dotfiles add, dotfiles commit, dotfiles push just like normal git. 
-On a new machine, you clone it and set up the same alias. The appeal is zero dependencies — just git.
+On a new machine, clone it and set up the same alias.
